@@ -1,0 +1,50 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #EDBBB4;
+    overflow: hidden;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 35px 45px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+
+}
+
+
+.topnav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .topnav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+.topnav a.active {
+    background-color: #edbbb4;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+img {
+    margin: auto;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 120px;
+}
