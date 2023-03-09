@@ -1,7 +1,25 @@
 /* Add a black background color to the top navigation */
 .topnav {
+    display: flex;
     background-color: #EDBBB4;
     overflow: hidden;
+}
+
+.left-nav {
+  flex: 3;
+  display: flex;
+  align-items: flex-end;
+}
+
+.mid-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.right-nav {
+  flex: 3;
 }
   
   /* Style the links inside the navigation bar */
@@ -46,5 +64,4 @@ img {
     margin: auto;
     display: inline-block;
     vertical-align: bottom;
-    margin-left: 120px;
 }
