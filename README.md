@@ -1,6 +1,11 @@
+## To run this application, `npm install` and `npm start` after opening the folder directory using the Terminal.
+
 # Getting Started with Create React App
 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 
 ## Available Scripts
 
