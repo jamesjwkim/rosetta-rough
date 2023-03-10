@@ -1,11 +1,16 @@
 import './Dashboard.css'
 
-function Dashboard() {
-    return(
-        <div class="dashboard">
-            <iframe src="https://tableau.washington.edu/views/Global_Publications_2020/GlobalPublicationsOverview?preview=true&amp;:embed=y&amp;:isGuestRedirectFromVizportal=y&amp;:showAppBanner=false&amp;:origin=viz_share_link&amp;preview_id=1866&amp;_thumbnail_id=1908&amp;:display_count=n&amp;preview_nonce=fcc954255d&amp;:showVizHome=n" width="900" height="650"></iframe>
+function TableauDashboard() {
+  return (
+    <div className='test'>
+        <div>
+        <iframe src="http://public.tableau.com/views/capstone_16783377101340/Dashboard1?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=en-US&amp;:loadOrderID=0" width="900" height="650"></iframe>
         </div>
-    )
+        <div>
+            <a className="tableau-link" href="https://public.tableau.com/views/capstone_16783377101340/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">Open in larger tab</a>
+        </div>
+    </div>
+  );
 }
 
-export default Dashboard;
+export default TableauDashboard;
