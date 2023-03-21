@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/rosetta-rough/static/css/main.c84ff718.css",
-    "main.js": "/rosetta-rough/static/js/main.1911ce14.js",
+    "main.js": "/rosetta-rough/static/js/main.babee2fe.js",
     "static/media/DescriptionImg.png": "/rosetta-rough/static/media/DescriptionImg.0d2e7ddf08b4b9acc306.png",
     "index.html": "/rosetta-rough/index.html",
     "main.c84ff718.css.map": "/rosetta-rough/static/css/main.c84ff718.css.map",
-    "main.1911ce14.js.map": "/rosetta-rough/static/js/main.1911ce14.js.map"
+    "main.babee2fe.js.map": "/rosetta-rough/static/js/main.babee2fe.js.map"
   },
   "entrypoints": [
     "static/css/main.c84ff718.css",
-    "static/js/main.1911ce14.js"
+    "static/js/main.babee2fe.js"
   ]
 }
