@@ -18,7 +18,7 @@
   align-items: center ;
 }
 
-.right-nav {
+.right-nav  {
   flex: 3;
   display: flex;
   align-items: flex-end;
@@ -60,6 +60,10 @@
     background-color: #edbbb4;
     text-decoration: underline;
     font-weight: bold;
+}
+
+.left-nav li {
+  list-style: none;
 }
 
 

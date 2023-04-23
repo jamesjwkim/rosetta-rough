@@ -1,18 +1,19 @@
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
-    return(
-        <div class="topnav">
-            <div class="left-nav">
-                <a class="active">Home</a>
-                <a>Scholars</a>
-                <a>Publications</a>
+    return (
+        <div className="topnav">
+            <div className="left-nav">
+                <li className='active'><Link to='/'>Home</Link></li>
+                <li><Link to='/scholars'>Scholars</Link></li>
+                <li><Link to='/publications'>Publications</Link></li>
             </div>
-            <div class="mid-nav">
-                <img src={require("./imgs/logo.png")} width="100" height="100"/>
+            <div className="mid-nav">
+                <img src={require("./imgs/logo.png")} width="100" height="100" />
             </div>
-            <div class="right-nav">
-                <a>Sign In</a>
+            <div className="right-nav">
+                <Link to='/signin'>Sign In</Link>
             </div>
         </div>
     )
