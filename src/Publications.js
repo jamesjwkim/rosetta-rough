@@ -4,9 +4,7 @@ import Footer from './Footer.js'
 
 function generatePublications() {
 
-
     
-
 
 
     return (
@@ -27,6 +25,13 @@ export function Publications(props) {
                 <Navbar />
                 <div className="filter">
                     <p>Filter</p>
+                    <div className="searchFilter">
+                        <select id="department">
+                            <option value="any">Any</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </div>
                     
                 </div>
             </div>

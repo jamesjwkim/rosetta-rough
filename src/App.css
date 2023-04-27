@@ -26,6 +26,7 @@ h2 {
     height: 29px;
     left: 278px;
     top: 282px;
+    font-family: "open sans";
 
     font-weight: 400;
     font-size: 24px;
@@ -33,4 +34,17 @@ h2 {
     padding-left: 160px;
 
     color: #000000;
+}
+
+.searchfilter {
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px 32px;
+gap: 4px;
+
 }
