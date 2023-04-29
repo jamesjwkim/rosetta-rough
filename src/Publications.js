@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from './Footer.js';
+import PubResult from "./PublicationsResults";
 import './Publications.css';
 
 
@@ -52,14 +53,23 @@ export function Publications(props) {
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
                         </select>
+                        
+                    </div>
+                    <div className="filterButtonContainer">
+                            <button className="buttonDesign">Filter!</button>
                     </div>
                 </div>
                 <div className="result">
-                    <div className="resultTitle">
-                        <h1>Publication</h1>
+                    <div className="resultDiv">
+                        <PubResult />
+                        <PubResult />
+                        <PubResult />
+                        <PubResult />
+                        
                     </div>
-                    <div><p>result</p></div>
-                    <div><p>result</p></div>
+                    <div className="resultDiv1">
+                        <p>result</p>
+                    </div>
                 </div>
             </div>
             <Footer />

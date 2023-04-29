@@ -5,17 +5,13 @@
 
 .filter {
     flex: 1;
-    box-sizing: border-box;
     width: 363px;
     height: 838px;
-    left: 112px;
-    top: 260px;
 
+    display: flex;
+    flex-direction: column; 
+    
     background: #FFFFFF;
-    /* grey/300
-
-    F1F1F1
-    */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     margin-left: 20px;
@@ -25,16 +21,10 @@
 }
 
 .filter h3 {
-    /* position: absolute; */
     text-align: center;
     font-weight: 400;
     font-size: 24px;
-
-    color: #000000;
-    margin: auto; /* Add this */
-    padding-top: 20px;
-    padding-bottom: 30px;
-    
+    color: #000000; 
 }
 
 
@@ -44,7 +34,11 @@
 }
 
 .searchFilter {
-    text-align: center; /* add this property */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
 }
 
 
@@ -66,16 +60,41 @@
     margin:0 auto;
 }
 
+.filterButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 25px;
+}
+
+.buttonDesign {
+    background-color: #4b2e83;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.buttonDesign:hover {
+    background-color: #6d42c2;
+}
+
 .result {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
 }
 
-.resultTitle {
+.resultDiv {
     border: 1px solid red;
+    flex:9
 }
 
-.resultTitle h1 {
-    text-decoration-line: underline;
+.resultDiv1 {
+    border: 1px solid red;
+    flex:1
 }
