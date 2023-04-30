@@ -1,12 +1,13 @@
 .singleResult {
-    border: 1px solid blue;
-    height: 80px;
+    height: 75px;
     display: flex;
+    border-top: 0.01rem solid;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
 .titleAndDesc {
-    border: 1px solid red;
     margin-left: 40px;
     flex:6;
     display: flex;
@@ -14,24 +15,51 @@
 }
 
 .resultTitle {
+    flex: 1;
+    overflow: hidden
 }
 
+
 .resultTitle h4 {
+    flex: 1;
     margin: 0;
     padding: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 500px;
+    overflow: hidden;
 }
 
 .resultDesc {
     font-size: 12px;
-    border: 1px solid red;
+    height: 40px;
+}
+
+.resultDesc p {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .resultID {
     flex: 2;
-    border: 1px solid red;
+}
+
+.resultID p {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .resultDate {
     flex: 2;
-    border: 1px solid red;
+}
+
+.resultDate p {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

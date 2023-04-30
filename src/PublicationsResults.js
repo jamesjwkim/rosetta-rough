@@ -5,17 +5,17 @@ function PubResult() {
         <div className="singleResult">
             <div className="titleAndDesc">
                 <div className="resultTitle">
-                    <h4>test</h4>
+                    <h4>testestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestest;</h4>
                 </div>
                 <div className="resultDesc">
-                    <p>test</p>
+                    <p>testDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesc</p>
                 </div>
             </div>
             <div className="resultID">
-                ID
+                <p>ID</p>
             </div>
             <div className="resultDate">
-                Pub.date
+                <p>PublicationDate</p>
             </div>
             <div>
 
