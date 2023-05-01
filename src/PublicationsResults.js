@@ -1,21 +1,21 @@
 import "./PublicationsResults.css";
 
-function PubResult() {
+function PubResult(props) {
     return(
         <div className="singleResult">
             <div className="titleAndDesc">
                 <div className="resultTitle">
-                    <h4>testestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestest;</h4>
+                    <h4>{props.title}</h4>
                 </div>
                 <div className="resultDesc">
-                    <p>testDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesctestDesc</p>
+                    <p>{props.desc}</p>
                 </div>
             </div>
             <div className="resultID">
-                <p>ID</p>
+                <p>{props.id}</p>
             </div>
             <div className="resultDate">
-                <p>PublicationDate</p>
+                <p>{props.pubDate}</p>
             </div>
             <div>
 

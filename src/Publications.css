@@ -89,11 +89,52 @@
     padding-top: 20px;
 }
 
-.resultDiv {
-    flex:9
+.resultLabel {
+    flex: 0.5;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    border-bottom: 0.01rem solid;
 }
 
-.resultDiv1 {
-    border: 1px solid red;
-    flex:1
+.resultLabelTitle {
+    margin-left: 40px;
+    flex: 6;
+}
+
+.resultLabelId {
+    flex: 2;
+}
+
+.resultLabelId p {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.resultLabelDate {
+    flex: 2;
+}
+
+.resultLabelDate p {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.resultDiv {
+    flex:8;
+}
+
+.resultPagination {
+    flex:0.5;
+    justify-content: center;
+    text-align: center;
+}
+
+.resultPagination a {
+    color: black;
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
 }

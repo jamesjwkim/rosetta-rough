@@ -1,7 +1,7 @@
 .singleResult {
     height: 75px;
     display: flex;
-    border-top: 0.01rem solid;
+    border-bottom: 0.01rem solid;
     margin-left: 20px;
     margin-right: 20px;
 }
