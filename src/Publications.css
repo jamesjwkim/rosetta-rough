@@ -137,4 +137,10 @@
     display: inline-block;
     padding: 8px 16px;
     text-decoration: none;
+    border-radius: 20px; /* adds round edges */
 }
+
+.resultPagination a.active {
+    background-color: #4b2e83;
+    color: white;
+  }
