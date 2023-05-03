@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function PubResult(props) {
   
     return(
-        <Link className="publication-link" to="/publications/result:id">
+        <Link className="publication-link" to={`/publications/result/${props.id}`} state={props}>
         <div className="singleResult">
             <div className="titleAndDesc">
                 <div className="resultTitle">

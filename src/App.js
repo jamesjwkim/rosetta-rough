@@ -14,7 +14,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/scholars' element={<Scholars />} />
           <Route path='/publications' element={<Publications />} />
-          <Route path='/publications/result:id' element={<SinglePublication />}/>
+          <Route path='/publications/result/:id' element={<SinglePublication />}/>
           <Route path='*' element={<Navigate to='/home' />} />
         </Route>
       </Routes>
