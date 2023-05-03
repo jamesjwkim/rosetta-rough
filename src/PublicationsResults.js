@@ -1,7 +1,11 @@
 import "./PublicationsResults.css";
+import SinglePublication from "./SinglePublication";
+import { Link } from 'react-router-dom';
 
 function PubResult(props) {
+  
     return(
+        <Link className="publication-link" to="/publications/result:id">
         <div className="singleResult">
             <div className="titleAndDesc">
                 <div className="resultTitle">
@@ -21,6 +25,7 @@ function PubResult(props) {
 
             </div>
         </div>
+        </Link>
     )
 }
 
