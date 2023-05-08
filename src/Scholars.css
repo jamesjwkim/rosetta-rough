@@ -1,0 +1,177 @@
+/* .scholarpage {
+  display:flex;
+  flex-wrap: wrap;
+} */
+.scholar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.container {
+  /* display: flex;
+    flex-wrap:nowrap; */
+  display: grid;
+  justify-content: center;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.eachuser {
+  border-radius: 10px;
+  border: px;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15)
+}
+
+.eachuser .userPhoto {
+  background: #aaa;
+  border-radius: 100%;
+  margin: 10px;
+  height: 60px;
+  width: 60px;
+  top: 10px;
+  left: 55px;
+}
+
+.textcontainer {
+  text-align: center;
+}
+
+.title {
+  font-size: 10px;
+}
+
+.eachuser .name {
+  font-size: 15px;
+  display: inline;
+}
+
+.learn {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
+
+.filter {
+  flex: 1;
+  width: 363px;
+  height: 838px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.filter h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+
+
+
+.searchFilter {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchBar {
+  width: 70%;
+  height: 20px;
+  padding: 4px;
+  box-sizing: "border-box";
+  border: "1px solid #F1F1F1";
+  border-radius: "4px";
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+.filterButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+
+.buttonDesign {
+  background-color: #4b2e83;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.buttonDesign:hover {
+  background-color: #6d42c2;
+}
+
+
+.scholarpage .resultPagination {
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.resultPagination a {
+  color: black;
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  /* adds round edges */
+}
+
+.resultPagination a.active {
+  background-color: #4b2e83;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .scholar {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .scholar .filter {
+    flex-grow: 4;
+    flex-shrink: 0;
+    width: 40%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .scholarpage {
+    flex-grow: 6;
+    flex-shrink: 0;
+    width: 60%;
+    /* disable wrapping on smaller screens */
+  }
+}

@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 
 import Navbar from "./Navbar";
 import Footer from './Footer.js';
-import PubResult from "./PublicationsResults";
+import PubResult from './PublicationsResults';
 
 import './Publications.css';
+import { Filter } from './Filter';
 
 export function Publications(props) {
-    
+
     const data = [
         { title: "Document1", desc: "This is a description for Document1", id: "132", pubDate: "3-11-2002" },
         { title: "Document2", desc: "This is a description for Document2", id: "12", pubDate: "4-1-2000" },
@@ -55,37 +56,11 @@ export function Publications(props) {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
 
-    
     return (
         <div>
             <Navbar />
             <div className="publicationResult">
-                <div className="filter">
-                    <h3>Filter</h3>
-                    <div className="searchFilter">
-                        <input className="searchBar" type="text" placeholder="Search..."/>
-                        <p>Department</p>
-                        <select className="department">
-                            <option value="any">Any</option>
-                        </select>
-                        <p>Field of Interest</p>
-                        <select className="department">
-                            <option value="any">Any</option>
-                        </select>
-                        <p>Location</p>
-                        <select className="department">
-                            <option value="any">Any</option>
-                        </select>
-                        <p>Institution</p>
-                        <select className="department">
-                            <option value="any">Any</option>
-                        </select>
-                        
-                    </div>
-                    <div className="filterButtonContainer">
-                            <button className="buttonDesign">Filter!</button>
-                    </div>
-                </div>
+                <Filter />
                 <div className="result">
                     <div className="resultLabel">
                         <div className="resultLabelTitle">
@@ -122,6 +97,6 @@ export function Publications(props) {
                 </div>
             </div>
             <Footer />
-        </div>   
+        </div>
     )
 }
