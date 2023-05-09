@@ -1,8 +1,12 @@
 /* Add a black background color to the top navigation */
 .topnav {
   display: flex;
-  background-color: #EDBBB4;
+  background-color: #4b2e83;
   overflow: hidden;
+}
+
+.topnav li a {
+  color: white;
 }
 
 .left-nav {
@@ -46,7 +50,7 @@ flex-direction: row-reverse;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #e8e3d3 ;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -57,7 +61,7 @@ flex-direction: row-reverse;
 }
 
 .topnav a.active {
-  background-color: #edbbb4;
+  background-color: #e8e3d3;
   text-decoration: underline;
   font-weight: bold;
 }

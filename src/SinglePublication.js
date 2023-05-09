@@ -1,4 +1,6 @@
 import { useParams, useLocation } from 'react-router-dom';
+import Navbar from "./Navbar";
+import Footer from './Footer.js';
 
 function SinglePublication(props) {
     const { id } = useParams();
@@ -7,11 +9,15 @@ function SinglePublication(props) {
 
     return (
         <div>
-        <h1>Single Publication Page</h1>
-        <p>title: {title}</p>
-        <p>description: {desc}</p>
-        <p>Publication ID: {id}</p>
-        <p>date: {pubDate}</p>
+          <Navbar />
+          <div>
+            <h1>{title}</h1>
+            <p>{desc}</p>
+            <p>Publication ID : {id}</p>
+            <p>Date : {pubDate}</p>
+            <p>Publisher(s) :</p>
+          </div>
+          <Footer className="footerP"/>
       </div>
     )
 }
