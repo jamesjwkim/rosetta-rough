@@ -8,7 +8,8 @@ function SinglePublication(props) {
     const { title, desc, pubDate } = location.state;
 
     return (
-        <div>
+
+      <div>
           <Navbar />
           <div>
             <h1>{title}</h1>
