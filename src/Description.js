@@ -6,7 +6,7 @@ function Description() {
             <div className="text-box">
                 <h1>About Rosetta</h1>
                 <p>Global Publications plays an important role in OGA, especially when it comes to Global presence. 
-                    The dashboard of Global Publications (right here) shows publications and co-publications by UW faculties. 
+                    The dashboard of Global Publications shows publications and co-publications by UW faculties. 
                     This dashboard shows UW co-authorship in different institutions that are outside of the USA. 
                     Tools like this are important as it demonstrates the influence UW faculties and alumni have on academic publications worldwide. 
                     It is an excellent tool to easily showcase and to be understood by others about how much impact UW has on other institutions.

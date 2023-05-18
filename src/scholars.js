@@ -20,11 +20,8 @@ export function Scholar() {
                 <Helmet>
                     <script src="https://tableau.washington.edu/javascripts/api/tableau.embedding.3.latest.min.js" type="module" />
                 </Helmet>
-                <tableau-viz id='tableau-viz' src='https://tableau.washington.edu/views/Global_Publications_2023/PublicationsbyFacultyName' width='1000' height='700' hide-tabs toolbar='bottom'></tableau-viz>
+                <tableau-viz id='tableau-viz' src='https://tableau.washington.edu/views/Global_Publications_2023/PublicationsbyFacultyName' width='1222' height='666' hide-tabs toolbar='bottom'></tableau-viz>
                 <a className="tableau-link" href="https://tableau.washington.edu/views/Global_Publications_2023/PublicationsbyFacultyName" target="_blank">Open in larger tab</a>
-            </div >
-            <div>
-                test
             </div>
             <Footer />
         </div >

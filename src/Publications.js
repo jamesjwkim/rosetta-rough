@@ -6,6 +6,7 @@ import PubResult from './PublicationsResults';
 
 import './Publications.css';
 import { Filter } from './Filter';
+import { Helmet } from 'react-helmet';
 
 export function Publications(props) {
 
@@ -20,58 +21,12 @@ export function Publications(props) {
     return (
         <div>
             <Navbar />
-            <div className="publicationResult">
-            <div className="filter">
-                <h3>Filter</h3>
-                <div className="searchFilter">
-                    <input className="searchBar" type="text" placeholder="Search..." />
-                    
-                </div>
-                <div className="filterButtonContainer">
-                    <button className="buttonDesign">Filter!</button>
-                </div>
-            </div>
-                <div className="result">
-                    <div className="resultLabel">
-                        <div className="resultLabelTitle">
-                            <p>Title</p>
-                        </div>
-                        <div className="resultLabelId">
-                            <p>ID</p>
-                        </div>
-                        <div className="resultLabelDate">
-                            <p>Pub. Date</p>
-                        </div>
-                    </div>
-                    <div className="resultDiv">
-                        {data.slice(startIndex, endIndex).map((item) => (
-                            <PubResult {...item} />
-                        ))}
-                    </div>
-                    <div className="resultPagination">
-                        <a href="#" onClick={() => setCurrentPage(currentPage - 1)}>&laquo;</a>
-                        {Array(Math.ceil(data.length / itemsPerPage))
-                            .fill()
-                            .map((_, i) => {
-                                const pageNumber = i + 1;
-                                if (pageNumber <= currentPage + 4 && pageNumber >= currentPage - 5) {
-                                    return (
-                                        <a
-                                            key={i}
-                                            href="#"
-                                            className={currentPage === pageNumber ? "active" : ""}
-                                            onClick={() => setCurrentPage(pageNumber)}
-                                        >
-                                            {pageNumber}
-                                        </a>
-                                    );
-                                } else {
-                                    return null;
-                                }
-                            })}
-                        <a href="#" onClick={() => setCurrentPage(currentPage + 1)}>&raquo;</a>
-                    </div>
-                </div>
+            <div className='scholarDashboard'>
+            <Helmet>
+                    <script src="https://tableau.washington.edu/javascripts/api/tableau.embedding.3.latest.min.js" type="module" />
+                </Helmet>
+                <tableau-viz id='tableau-viz' src='https://tableau.washington.edu/views/Global_Publications_2023/PublicationsbyTitle' width='1222' height='666' hide-tabs toolbar='bottom'></tableau-viz>
+                <a className="tableau-link" href="https://tableau.washington.edu/views/Global_Publications_2023/PublicationsbyTitle" target="_blank">Open in larger tab</a>
             </div>
             <Footer />
         </div>
