@@ -20,7 +20,7 @@ function Description() {
                 </p>
             </div>
             <div className="image-box">
-            <img src={require("./imgs/DescriptionImg.png")} alt="stock" width="200" height="200"/>
+            <img src={require("./imgs/descriptionimg.png")} alt="stock" width="200" height="200"/>
             </div>
         </div>
     )

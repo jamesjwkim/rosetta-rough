@@ -6,8 +6,8 @@ function Navbar() {
         <div className="topnav">
             <div className="left-nav">
                 <li className='active'><Link to='/'>Home</Link></li>
-                <li><Link to='/scholars'>Scholars</Link></li>
-                <li><Link to='/publications'>Publications</Link></li>
+                <li><Link to='/openalex/build_old/scholars'>Scholars</Link></li>
+                <li><Link to='/openalex/build_old/publications'>Publications</Link></li>
             </div>
             <div className="mid-nav">
                 <img src={require("./imgs/logo.png")} width="100" height="100" />
