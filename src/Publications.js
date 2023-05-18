@@ -25,7 +25,7 @@ export function Publications(props) {
             <Helmet>
                     <script src="https://tableau.washington.edu/javascripts/api/tableau.embedding.3.latest.min.js" type="module" />
                 </Helmet>
-                <tableau-viz id='tableau-viz' src='https://tableau.washington.edu/views/Global_Publications_2023/PublicationsbyTitle' width='1222' height='666' hide-tabs toolbar='bottom'></tableau-viz>
+                <tableau-viz id='tableau-viz' src='https://tableau.washington.edu/views/Global_Publications_2023/PublicationsbyTitle' width='1222' height='777' hide-tabs toolbar='bottom'></tableau-viz>
                 <a className="tableau-link" href="https://tableau.washington.edu/views/Global_Publications_2023/PublicationsbyTitle" target="_blank">Open in larger tab</a>
             </div>
             <Footer />
