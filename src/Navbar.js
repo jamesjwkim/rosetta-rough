@@ -13,7 +13,7 @@ function Navbar() {
                 <img src={require("./imgs/logo.png")} width="100" height="100" />
             </div>
             <div className="right-nav">
-                <li><Link to='/signin'>Sign In</Link></li>
+                <li className='signButton'><Link to='/signin'><span>Sign In</span></Link></li>
             </div>
         </div>
     )

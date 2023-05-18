@@ -70,6 +70,14 @@ flex-direction: row-reverse;
 list-style: none;
 }
 
+.signButton {
+  list-style: none;
+}
+
+.signButton:hover:before {
+  color: white;
+  content: "coming soon!"
+}
 
 img {
   margin: auto;
