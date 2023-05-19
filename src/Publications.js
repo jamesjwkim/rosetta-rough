@@ -7,6 +7,7 @@ import PubResult from './PublicationsResults';
 import './Publications.css';
 import { Filter } from './Filter';
 import { Helmet } from 'react-helmet';
+import { GiBookshelf } from 'react-icons/gi';
 
 export function Publications(props) {
 
@@ -22,6 +23,7 @@ export function Publications(props) {
         <div>
             <Navbar />
             <div className='scholarDashboard'>
+                <p>Search Publications from the Scholars of UW <GiBookshelf /></p>
             <Helmet>
                     <script src="https://tableau.washington.edu/javascripts/api/tableau.embedding.3.latest.min.js" type="module" />
                 </Helmet>
