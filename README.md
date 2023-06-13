@@ -19,10 +19,10 @@ The UW Office of Global Affairs (OGA) relies on the Global Publications Dashboar
 Stakeholders can access the Rosetta website through OGA's website. They will be able to view the dashboard to get an understanding of UW's publications and co-authorships around the world. However, since our website mainly serves UW faculties, users will need to log in with their UW credentials in order to utilize advanced features such as the Publications and the Scholars page. This is to maintain data integrity and for the development team to keep track of users' information as we allow users to upload their work. We want to prevent users from claiming publications that don't belong to them and support users from refreshing the database when they manually upload their work.
 
 ## Our Solution
-### Refreshed Data Dashboard
+#### Refreshed Data Dashboard
 Since Microsoft Academic Graph stopped providing services, OGA decided to switch to OpenAlex as a new data source. We wrote a Python script to call on OpenAlex API and extracted 2M rows of updated publications data. The output dataset is published to OGA's MySQL server after going through another name-matching process with the UW HR database to facilitate data management and workflow at the production level. Therefore, we are able to visualize the global impact of the university by publishing a Tableau dashboard connected to the MySQL database.
 
-### Networking Tool
+#### Networking Tool
 After having stakeholder interviews and user testings, we noticed that our stakeholders, UW faculties, are interested in the percentile of UW's relationship with other institutions as well as connecting with scholars whose publications they are interested in. Hence, we developed a networking tool where users can browse scholars' profiles and reach out to others via email. They can also bookmark publications that they want to come back to later and find these publications under their profile page. We also encourage scholars to manually upload their publications to help refresh our database.
 
 ## Project Status
